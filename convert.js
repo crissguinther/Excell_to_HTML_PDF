@@ -8,7 +8,8 @@ const PDFWriter = require("./src/classes/PDFWriter");
 const reader = new Reader();
 
 async function main() {
-  let data = await reader.Read("./tasks.csv");
+  const args = process.argv.slice(2);
+  let data = await reader.Read(args[0]);
   let processedData = Processor.Process(data);
 
   const table = new Table(processedData);
