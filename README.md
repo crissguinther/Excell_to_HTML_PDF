@@ -1,4 +1,4 @@
-# Excell_to_HTML_PDF
+# Excell to HTML and PDF Converter
 Simple project that will convert .csv files into HTML and PDF. You must have Node and NPM installed.
 
 ## How to excecute
